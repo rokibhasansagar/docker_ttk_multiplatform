@@ -59,5 +59,5 @@ RUN apt-get -qq update -y && \
         export plat=armv6 \
         ;; \
     esac && \
-    curl -sL https://github.com/viswanathbalusu/megasdkrest/releases/download/v0.1.14/megasdkrest-${plat} -o /usr/local/bin/megasdkrest && \
+    curl -sL https://github.com/viswanathbalusu/megasdkrest/releases/download/v0.1.17/megasdkrest-${plat} -o /usr/local/bin/megasdkrest && \
     chmod +x /usr/local/bin/megasdkrest

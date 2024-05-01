@@ -45,7 +45,7 @@ jobs:
           echo ".git" > .dockerignore
           
           docker buildx build . --file Dockerfile --compress --no-cache --rm --force-rm --push
-          --platform linux/amd64,linux/386,linux/arm64/v8,linux/arm/v7,linux/arm/v6
+          --platform linux/amd64,linux/amd64/v2,linux/amd64/v3,linux/386,linux/arm64/v8,linux/arm/v7,linux/arm/v6
           --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
           --build-arg VCS_REF=`git rev-parse --short HEAD`
           --build-arg VCS_URL=`git remote get-url origin`

@@ -43,7 +43,7 @@ RUN apt-get -qq update -y && \
     curl -sL https://rclone.org/install.sh | bash && \
     apt-get autoremove -qy && \
     case $TARGETPLATFORM in \
-    "linux/amd64") \
+    "linux/amd64"*) \
         export plat=amd64 \
         ;; \
     "linux/386") \
